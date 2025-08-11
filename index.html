@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Stitch Design</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="box">
+      <div class="app">
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#111b22] dark justify-between group/design-root overflow-x-hidden scroll"
+      style='font-family: "Space Grotesk", "Noto Sans", sans-serif;  '
+    >
+      <div >
+        <div class="flex items-center bg-[#111b22] p-4 pb-2 justify-between">
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Weather</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-white" data-icon="List" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+          <label class="flex flex-col min-w-40 flex-1">
+            <input
+              placeholder="Search for a city or airport"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#243847] focus:border-none h-14 placeholder:text-[#93b2c8] p-4 text-base font-normal leading-normal input"
+              value=""
+            />
+          </label>
+        </div>
+        <div class="pb-3">
+          <div class="flex border-b border-[#345165] px-4 gap-8">
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#47a7eb] text-white pb-[13px] pt-4" href="#">
+              <p class="text-white text-sm font-bold leading-normal tracking-[0.015em]">Today</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#93b2c8] pb-[13px] pt-4" href="#">
+              <p class="text-[#93b2c8] text-sm font-bold leading-normal tracking-[0.015em]">10-day</p>
+            </a>
+          </div>
+        </div>
+        <div class="@container">
+          <div class="@[480px]:px-4 @[480px]:py-3">
+            <div
+              class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-[#111b22] @[480px]:rounded-xl min-h-[218px]"
+              style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMGj_MiQK69KybVLEGlrm8eYrtplj5My-sVL_R-0q3ax6ckC43HbA1GujsHbM2F094oa2fy7wi-0kU-NS8fuvIgzQmKQqGH6_4LpN7t7DefyYgNEZR0qGcWBo3GPzoRzWHo3R43pKUxUCoi39ZPJY7x8lvb0u09jR-I_E6T8SNxwhynXvmdnS4RT2z6vf3n1eP44pip3JMz-0AUe_hljRRJxi2Y6-JmTKfi3OzYwsD9fNoyPFOxSa72sUj9nLY-wqk8PP9dg-b_KNs");'
+            >
+              <div class="flex p-4"><p class="text-white tracking-light text-[28px] font-bold leading-tight location">Delhi</p></div>
+            </div>
+          </div>
+        </div>
+        <h1  class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6 temp">18°</h1>
+        <p  class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 cond">Mostly clear</p>
+        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4  high">HIGH: 20°</p>
+         <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 low"> LOW: 12°</p>
+   
+        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Details</h2>
+        <div class="p-4 grid grid-cols-2">
+        
+          <div class="flex flex-col gap-1 border-t border-solid border-t-[#345165] py-4 pl-2">
+            <p class="text-[#93b2c8] text-sm font-normal leading-normal">Wind</p>
+            <p class="text-white text-sm font-normal leading-normal wind">10 km/h</p>
+          </div>
+          <div class="flex flex-col gap-1 border-t border-solid border-t-[#345165] py-4 pr-2">
+            <p class="text-[#93b2c8] text-sm font-normal leading-normal">Humidity</p>
+            <p class="text-white text-sm font-normal leading-normal humidity">70%</p>
+          </div>
+          <div class="flex flex-col gap-1 border-t border-solid border-t-[#345165] py-4 pl-2">
+            <p class="text-[#93b2c8] text-sm font-normal leading-normal">Visibility</p>
+            <p class="text-white text-sm font-normal leading-normal vis">10 km</p>
+          </div>
+          <div class="flex flex-col gap-1 border-t border-solid border-t-[#345165] py-4 pr-2">
+            <p class="text-[#93b2c8] text-sm font-normal leading-normal">Pressure</p>
+            <p class="text-white text-sm font-normal leading-normal pressure">1012 hPa</p>
+          </div>
+          
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#243847] bg-[#1a2832] px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-white" href="#">
+            <div class="text-white flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#93b2c8]" href="#">
+            <div class="text-[#93b2c8] flex h-8 items-center justify-center" data-icon="MapPin" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#93b2c8]" href="#">
+            <div class="text-[#93b2c8] flex h-8 items-center justify-center" data-icon="Clock" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#93b2c8]" href="#">
+            <div class="text-[#93b2c8] flex h-8 items-center justify-center" data-icon="Sun" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#93b2c8]" href="#">
+            <div class="text-[#93b2c8] flex h-8 items-center justify-center" data-icon="DotsNine" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M72,60A12,12,0,1,1,60,48,12,12,0,0,1,72,60Zm56-12a12,12,0,1,0,12,12A12,12,0,0,0,128,48Zm68,24a12,12,0,1,0-12-12A12,12,0,0,0,196,72ZM60,116a12,12,0,1,0,12,12A12,12,0,0,0,60,116Zm68,0a12,12,0,1,0,12,12A12,12,0,0,0,128,116Zm68,0a12,12,0,1,0,12,12A12,12,0,0,0,196,116ZM60,184a12,12,0,1,0,12,12A12,12,0,0,0,60,184Zm68,0a12,12,0,1,0,12,12A12,12,0,0,0,128,184Zm68,0a12,12,0,1,0,12,12A12,12,0,0,0,196,184Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="h-5 bg-[#1a2832]"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  </body>
+</html>
